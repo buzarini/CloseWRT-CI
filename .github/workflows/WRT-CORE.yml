@@ -122,7 +122,7 @@ jobs:
         run: |
           cd ./wrt/
           
-          git clone --depth=1 --single-branch --branch 23.05.5 Ser9ei/xiaomi_ax3000t-openwrt23_patch
+          git clone --depth=1 --single-branch --branch 23.05.5 https://github.com/Ser9ei/xiaomi_ax3000t-openwrt23_patch
           
           patch -p1 -N < xiaomi_ax3000t-openwrt23_patch/xiaomi_ax3000t-dts.patch
           chmod 755 target/linux/mediatek/filogic/base-files/etc/init.d/bootcount
