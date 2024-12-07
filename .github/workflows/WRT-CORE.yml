@@ -172,7 +172,6 @@ jobs:
 
           rm -rf ./tmp* ./.config*
           
-          cp xiaomi_ax3000t-openwrt23_patch/openwrt.config .config
           cat $GITHUB_WORKSPACE/Config/$WRT_TARGET.txt >> .config
 
           make defconfig -j$(nproc)
